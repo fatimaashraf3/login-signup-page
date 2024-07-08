@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
@@ -12,7 +12,7 @@
     <div  class="main">
          <h1>LOGIN AND SIGNUP</h1>
 
-         <p id="dignupname"><i class="fa-solid fa-user margin"></i>Name</p>
+         <p id="signupname"><i class="fa-solid fa-user margin"></i>Name</p>
          <input type="text">
 
          <p id="signupemail"><i class="fa-solid fa-envelope margin"></i>Email</p>
@@ -21,25 +21,16 @@
          <p >Password<i class="fa-solid fa-eye-slash distance" id="eyeicon" onclick="show()"></i></p>
          <input type="password" id="passwordin">
 
-         <button onclick="signup()">Sign up</button>
-         <P class="special">Already have an account? <a href="#" onclick="changeform()">Login</a></P>
+         <button id="signbtn">Create account</button>
+         <P class="special">Already have an account? <a href="src/login.html">Login</a></P>
     </div>
     </div>
 
-
-    <div id="loginform" class="container" style="display: none;">
-        <div class="main-two">
-             <h1>LOGIN</h1>
-
-             <p id="loginemail"><i class="fa-solid fa-envelope margin"></i>Email</p>
-             <input type="email">
-
-             <p >Password<i class="fa-solid fa-eye-slash distance" id="eyeicon" onclick="show()"></i></p>
-             <input type="password" id="passwordin">
-
-             <button onclick="login()">Login</button>
-        </div>
-        </div>
-</body>
 <script src="script.js"></script>
+
+</body>
+
+
+
+
 </html>
